@@ -83,8 +83,14 @@ python3 -m venv venv
 ```
 ⚙️ Шаг 4. Активируйте окружение
 
-- Linux / macOS: `source venv/bin/activate `
-- Windows:`venv\Scripts\activate`
+- Linux / macOS: 
+```bash
+ source venv/bin/activate 
+ ```
+- Windows:
+```bash
+venv\Scripts\activate
+```
 
 📦 Шаг 5. Установите зависимости
 
