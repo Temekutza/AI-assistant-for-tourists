@@ -1,7 +1,8 @@
 import logging
 import time
-import ollama
+import asyncio
 from data_loader import CULTURAL_DATA
+from ollama import AsyncClient
 
 logger = logging.getLogger(__name__)
 
@@ -21,7 +22,7 @@ def _serialize_for_prompt(data: list) -> str:
             lines.append(f"• Объект {i}: " + " | ".join(parts))
     return "\n".join(lines)
 
-def generate_route_suggestion(user_data) -> str:
+async def generate_route_suggestion(user_data) -> str:
     logger.info(f"Передаю {len(CULTURAL_DATA)} объектов в промпт")
     lat = user_data['location']['latitude']
     lon = user_data['location']['longitude']
@@ -50,7 +51,8 @@ def generate_route_suggestion(user_data) -> str:
 
     start = time.time()
     try:
-        response = ollama.chat(
+        client = AsyncClient()
+        response = await client.chat(
             model='mistral',
             messages=[{'role': 'user', 'content': prompt}],
             options={'temperature': 0.7}
