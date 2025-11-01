@@ -70,23 +70,29 @@ AI-assistant-for-tourists/
 ## 🚀 Установка и запуск
 
 🔧 Шаг 1. Склонируйте репозиторий
-``git clone https://github.com/Temekutza/AI-assistant-for-tourists.git``
+```bash
+git clone https://github.com/Temekutza/AI-assistant-for-tourists.git
+```
 📁 Шаг 2. Перейдите в директорию проекта
-``cd AI-assistant-for-tourists``
+```bash
+cd AI-assistant-for-tourists
+```
 🧱 Шаг 3. Создайте виртуальное окружение
-``python3 -m venv venv ``
+```bash
+python3 -m venv venv
+```
 ⚙️ Шаг 4. Активируйте окружение
 
-- Linux / macOS:`` source venv/bin/activate ``
-- Windows:``venv\Scripts\activate``
+- Linux / macOS: `source venv/bin/activate `
+- Windows:`venv\Scripts\activate`
 
 📦 Шаг 5. Установите зависимости
 
-``pip install -r requirements.txt``
+`pip install -r requirements.txt`
 
 ▶️ Шаг 6. Запустите бота
 
-``python3 main.py``
+`python3 main.py`
 
 🗺️ Пример сценария
 
