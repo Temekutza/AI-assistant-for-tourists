@@ -95,11 +95,15 @@ venv\Scripts\activate
 
 📦 Шаг 5. Установите зависимости
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 ▶️ Шаг 6. Запустите бота
 
-`python3 main.py`
+```bash
+python3 main.py
+```
 
 🗺️ Пример сценария
 
